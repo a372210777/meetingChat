@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <TextView
+        android:id="@+id/top_bg"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content"
+        android:paddingRight="4.0dip" />
+
+    <TextView
+        android:id="@+id/opinion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17.0dip"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip" >
+
+        <TextView
+            android:id="@+id/label1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="平均分:"
+            android:textSize="17.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/average_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17.0dip"
+            android:layout_toRightOf="@id/label1_tv" />
+
+        <!-- <RatingBar
+            android:id="@+id/ratingBar1_rb"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/label1_tv"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="1" />  -->
+
+        <TextView
+            android:id="@+id/sd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:textSize="17.0dip"
+           />
+
+        <TextView
+            android:id="@+id/label2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/sd_tv"
+            android:text="标准差:"
+            android:textSize="17.0dip"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

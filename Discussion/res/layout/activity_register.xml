@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/res_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/reg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="用户名:" />
+
+        <EditText
+            android:id="@+id/register_phone_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reg_tv"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:maxLength="13"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/res_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_top"
+        android:layout_centerVertical="true"
+        android:background="@drawable/g_list_middle_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/reg_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密   码:" />
+
+        <EditText
+            android:id="@+id/reg_pwd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reg_pwd_tv"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:maxLength="15"
+            android:password="true"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/res_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_medium"
+        android:background="@drawable/g_list_bottom_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/reg_confirmpwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="密   码:" />
+
+        <EditText
+            android:id="@+id/reg_confirmpwd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reg_confirmpwd_tv"
+            android:background="@null"
+            android:hint="请再次输入密码"
+            android:maxLength="15"
+            android:password="true"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_bottom"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/g_list_bottom_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/reg_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="邮   箱:" />
+
+        <EditText
+            android:id="@+id/reg_email_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reg_email_tv"
+            android:background="@null"
+            android:hint="请输入邮箱"
+            android:maxLength="35"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_bottom"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/login_btn"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/havaCount_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_btn"
+        android:background="@drawable/login_btn"
+        android:text="我已经有账号了" />
+
+</RelativeLayout>

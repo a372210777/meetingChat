@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/res_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/host1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="房主:" />
+
+        <TextView
+            android:id="@+id/host_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/host1_tv"
+            android:background="@null"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_middle_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/roomTheme1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="房间ID:" />
+
+        <TextView
+            android:id="@+id/roomName_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/roomTheme1_tv"
+            android:background="@null"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_middle_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/roomTheme1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="主题:" />
+
+        <TextView
+            android:id="@+id/roomTheme_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/roomTheme1_tv"
+            android:background="@null"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_bottom_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="在线人数:" />
+
+        <TextView
+            android:id="@+id/onLineNum_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/label_tv"
+            android:background="@null"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</LinearLayout>

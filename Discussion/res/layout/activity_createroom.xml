@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/res_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/reg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="房间名称:" />
+
+        <EditText
+            android:id="@+id/roomID_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reg_tv"
+            android:background="@null"
+            android:hint="输入房间名称"
+            android:maxLength="20"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/roomSubject_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="房间主题:" />
+
+        <EditText
+            android:id="@+id/roomSubject_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/roomSubject_tv"
+            android:background="@null"
+            android:hint="输入房间主题"
+            android:maxLength="50"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/roomPwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="房间密码:" />
+
+        <EditText
+            android:id="@+id/roomPwd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/roomPwd_tv"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/g_list_top_bg"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/ensurePwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确认密码:" />
+
+        <EditText
+            android:id="@+id/ensurePwd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ensurePwd_tv"
+            android:background="@null"
+            android:hint="确认密码"
+            android:password="true"
+            android:maxLength="20"
+            android:singleLine="true" />
+    </RelativeLayout>
+  <Button
+        android:id="@+id/createRoom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/login_btn"
+        android:text="创建房间" />
+</LinearLayout>

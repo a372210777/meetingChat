@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10.0dip" >
+
+    <TextView
+        android:id="@+id/opinion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="4.0dip"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="17.0dip"
+        android:textStyle="bold" />
+    
+    <TextView
+         android:id="@+id/lable_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/opinion_tv"
+         android:layout_below="@id/opinion_tv"
+         android:text="分类:"/>
+
+     <TextView
+         android:id="@+id/cate_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/lable_tv"
+         android:layout_alignTop="@id/lable_tv"
+         android:text="无分类"/>
+
+    <TextView
+        android:id="@+id/userName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/opinion_tv"
+        android:layout_below="@id/lable_tv"
+        android:textColor="@android:color/black"
+        android:textSize="15.0dip" />
+
+        
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/userName_tv"
+        android:layout_marginRight="14.0dip"    
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize="1" />
+  <!--   <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userName_tv"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ratingBar1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="10.0dip" />  -->
+
+</RelativeLayout>
